@@ -1,4 +1,4 @@
-:root{
+:root {
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
@@ -11,21 +11,21 @@
 html {
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: Helvetica, sans-serif;
   box-sizing: border-box;
 }
 
-.grid{
+.grid {
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
 }
 
-.grid-full-width{
+.grid-full-width {
   width: 100%;
 }
 
-.grid__row{
+.grid__row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -37,4 +37,12 @@ html {
   to {
     opacity: 1;
   }
+}
+
+.has-border-radius-2px {
+  border-radius: 2px;
+}
+
+.has-border-shadow {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 1px;
 }
