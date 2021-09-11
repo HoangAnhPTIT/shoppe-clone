@@ -120,8 +120,9 @@
   padding: 5px;
 }
 
-.util__item--has-modal-notify:hover .header__notify{
+.util__item--has-modal-notify:hover .header__notify {
   display: block;
+  z-index: 10;
 }
 
 .header__notify {
@@ -137,7 +138,7 @@
   display: none;
 }
 
-.header__notify--has-top-arrow::before{
+.header__notify--has-top-arrow::before {
   content: "";
   display: block;
   border-style: solid;
@@ -145,7 +146,7 @@
   border-color: transparent transparent var(--white-color) transparent;
   position: absolute;
   top: -30px;
-  right: 0; 
+  right: 0;
 }
 
 @keyframes headerNotifyGrowth {
@@ -172,11 +173,9 @@
   padding-left: 10px;
 }
 
-
-.notify__item:hover{
+.notify__item:hover {
   background-color: #eee;
 }
-
 
 .notify__item-img {
 }
@@ -205,11 +204,85 @@
   font-weight: 300;
   opacity: 0.6;
 }
-.notify-footer{
+.notify-footer {
   font-size: 16px;
   font-weight: 300;
   text-align: center;
   padding: 10px 0;
   background-color: #eee;
   display: block;
+}
+
+#header .boxsearch {
+  margin-top: 8px;
+}
+
+.boxsearch-logo {
+  width: 12%;
+  fill: var(--white-color);
+  padding-left: 15px;
+  float: left;
+}
+
+.search-area {
+  float: left;
+  margin-left: 50px;
+}
+
+.search-area-input {
+  position: relative;
+}
+
+.search-area-input input {
+  padding: 12px 0 12px 10px;
+  border: none;
+  border-radius: 2px;
+  width: 840px;
+  outline: none;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.search-area .search-icon {
+  position: absolute;
+  right: 4px;
+  background-color: #f36446;
+  padding: 10px 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  font-size: 14px;
+  color: white;
+}
+
+.search-area .search-icon:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.search-area .suggest-product-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.search-area .suggest-product-item {
+  display: inline-block;
+}
+
+.search-area .suggest-product-link {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.cart-icon {
+  color: var(--white-color);
+  font-size: 22px;
+  margin-left: 65px;
+  display: inline-block;
+  margin-top: 18px;
 }
